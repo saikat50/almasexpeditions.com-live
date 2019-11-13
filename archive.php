@@ -9,45 +9,63 @@
 
 get_header();
 ?>
+    <div class="banner-text-area-all-trips bg-5 bg-black-transparent-layer mb-50" style="background-image: url(<?php the_field('background_image', get_option('page_for_posts')); ?>)">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 col-lg-12">
+                    <div class="content">
+
+                        <?php the_archive_title( '<h2 class="banner-head color-yellow">', '</h2>' ); ?>
+                        <?php the_archive_description( '<h3 class="banner-head-2 text-white mt-15">', '</h3>' ); ?>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+                        <?php if ( have_posts() ) : ?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
 
-			endwhile;
+                            <?php
+                            /* Start the Loop */
+                            while ( have_posts() ) :
+                                the_post();
 
-			the_posts_navigation();
+                                /*
+                                 * Include the Post-Type-specific template for the content.
+                                 * If you want to override this in a child theme, then include a file
+                                 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+                                 */
+                                get_template_part( 'template-parts/content', get_post_type() );
 
-		else :
+                            endwhile;
 
-			get_template_part( 'template-parts/content', 'none' );
+                            the_posts_navigation();
 
-		endif;
-		?>
+                        else :
+
+                            get_template_part( 'template-parts/content', 'none' );
+
+                        endif;
+                        ?>
+                    </div>
+                    <div class="col-md-4">
+                        <?php get_sidebar(); ?>
+                    </div>
+                </div>
+            </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

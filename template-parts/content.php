@@ -27,15 +27,14 @@
             <div class="blog-detail">
                 <div class="row">
                     <div class="col-md-12">
-
+                        <?php do_shortcode('[mashshare]'); ?>
                         <ul class="bottom-bar">
                             <li class="comment-line"><i class="fas fa-comment"></i><span style="margin-left: 10px" class="love-num love-num2"><?php comments_number(0, 1, '%'); ?><span style="margin-left: 5px">COMMENTS</span></li>
                             <li class="like-line"><?php heart_this_hearts(); ?><span style="margin-left: 5px">LIKE</span></li>
                             <li class="categories-line"><i class="fas fa-bookmark"></i><?php the_category(','); ?></li>
-                            <li class="categories-line"><div class="share-icon"><p><i class="fas fa-share-alt"></i></p><div class="share-now"><?php echo[Sassy_Social_Share]; ?></div></div></li>
+                            <li><div class="share-icon"><p><i class="fas fa-share-alt"></i></p><div class="share-now"><?php echo do_shortcode('[supsystic-social-sharing id="1"]') ?></div></div></li>
                         </ul>
                     </div>
-
 
                 </div>
             </div>

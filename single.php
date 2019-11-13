@@ -1,37 +1,10 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package TCFTHEME
- */
+<?php if(have_posts()) {the_post(); rewind_posts();} ?>
 
-get_header();
-?>
+<?php if('tour' == get_post_type()){
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+    include (TEMPLATEPATH . '/single-tour.php');
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+}else{
 
-			get_template_part( 'template-parts/content', 'single' );
-
-			the_post_navigation();
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+    include (TEMPLATEPATH . '/template-parts/content-single-template.php');
+}
