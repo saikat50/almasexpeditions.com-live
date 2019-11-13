@@ -32,7 +32,7 @@ get_header();
             <div class="next-tour mt-50 destination-tour">
                 <div class="row">
                     <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                        <a href="">
+                        <a href="<?php echo site_url() . '/mexico'; ?>">
                             <div class="place-card">
                                 <div class="img-text-holder">
                                     <img src="<?php $image = get_field('image'); echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
@@ -44,7 +44,7 @@ get_header();
                         </a>
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                        <a href="">
+                        <a href="<?php echo site_url() . '/guatemala'; ?>">
                             <div class="place-card">
                                 <div class="img-text-holder">
                                     <img src="<?php $image2 = get_field('g_image'); echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>">
@@ -56,7 +56,7 @@ get_header();
                         </a>
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                        <a href="">
+                        <a href="<?php echo site_url() . '/belize'; ?>">
                             <div class="place-card">
                                 <div class="img-text-holder">
                                     <img src="<?php $image3 = get_field('b_image'); echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>">

@@ -87,37 +87,28 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
-                        <div class="logo"><a href="index.html"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo/Almas.png" alt="Almas Expedition"></a></div>
+                        <div class="logo"><a href="<?php echo site_url()?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo/Almas.png" alt="Almas Expedition"></a></div>
                     </div>
                     <div class="col-sm-6 col-lg-9">
                         <nav id="primary-menu">
                             <ul class="main-menu text-right">
-                                <li><a href="index.html">All trips</a></li>
+                                <li><a href="<?php echo site_url() . '/all-trips'; ?>">All trips</a></li>
                                 <li><a href="">Travel styles <i class="fal fa-chevron-down"></i></a>
                                     <ul class="dropdown">
-                                        <li><a href="">Family fun</a></li>
-                                        <li><a href="">Adventure</a></li>
-                                        <li><a href="">Cultural</a></li>
-                                        <li><a href="">Holiday & Seasonal</a></li>
-                                        <li><a href="">Book of Mormon Tours</a></li>
+                                        <li><a href="<?php echo site_url() . '/family-fun'; ?>">Family fun</a></li>
+                                        <li><a href="<?php echo site_url() . '/adventure'; ?>">Adventure</a></li>
+                                        <li><a href="<?php echo site_url() . '/cultural'; ?>">Cultural</a></li>
+                                        <li><a href="<?php echo site_url() . '/holiday-and-seasonal'; ?>">Holiday & Seasonal</a></li>
+                                        <li><a href="<?php echo site_url() . '/book-of-mormon-tours'; ?>">Book of Mormon Tours</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="">Destinations</a></li>
-                                <li><a href="">About US</a></li>
-                                <li><a href="">Blog</a></li>
-                                <li><a href="">Contact us</a></li>
+                                <li><a href="<?php echo site_url() . '/destinations'; ?>">Destinations</a></li>
+                                <li><a href="<?php echo site_url() . '/about-us'; ?>">About US</a></li>
+                                <li><a href="<?php echo site_url() . '/blog'; ?>">Blog</a></li>
+                                <li><a href="<?php echo site_url() . '/contact-us'; ?>">Contact us</a></li>
                             </ul>
                         </nav>
 
-                        <?php wp_nav_menu( array(
-
-                                'theme_location'  => 'primary',
-                                'container'       => 'nav',
-                                'container_class' => 'primary-menu',
-                                'menu_class'      => 'main-menu text-right'
-
-                            )
-                        ); ?>
 
                     </div>
                 </div>
