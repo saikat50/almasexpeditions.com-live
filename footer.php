@@ -39,9 +39,9 @@
             <div class="col-6 col-md-2 mob-mt-20">
                 <p class="f-meu-head">Social Media</p>
                 <ul class="footer-menu social-media">
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/almasexpeditions" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/almasexpeditions/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCkXrj9jGsbMtjhktpRKRUWA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
             <div class="col-md-2">
@@ -100,40 +100,20 @@
             <div class="sidecontent">
                 <h4 >Personalize your travel</h4>
                 <p>Complete the form and receive a Custom Travel quote</p>
-                <form action="">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <select class="form-control" name="" id="">
-                            <option value="">Destination</option>
-                            <option value="">Argentina</option>
-                            <option value="">Argentina</option>
-                            <option value="">Argentina</option>
-                        </select>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="form-group" id="budget">
-                        <select class="form-control" name="">
-                            <option value="">Budget</option>
-                            <option value="">Argentina</option>
-                            <option value="">Argentina</option>
-                            <option value="">Argentina</option>
-                        </select>
-                        <div class="clearfix"></div>
-                    </div>
 
-                    <div class="form-group" id="msg">
-                        <textarea name="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button class="bg-color-yellow customize-btn customize-btn-sm btn-block">Sign Up Now</button>
-                    </div>
 
-                </form>
+                <?php
+                // query for the about page
+                $your_query = new WP_Query( 'pagename=home' );
+                // "loop" through query (even though it's just one page)
+                while ( $your_query->have_posts() ) : $your_query->the_post();
+                    the_content();
+                endwhile;
+                // reset post data (important!)
+                wp_reset_postdata();
+                ?>
+
+
             </div>
 
         </div>

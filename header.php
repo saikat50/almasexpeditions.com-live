@@ -77,7 +77,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tcf-theme' ); ?></a>
+
 
     <!--Main Wrapper Start-->
     <div class="as-mainwrapper">
@@ -108,6 +108,17 @@
                                 <li><a href="">Contact us</a></li>
                             </ul>
                         </nav>
+
+                        <?php wp_nav_menu( array(
+
+                                'theme_location'  => 'primary',
+                                'container'       => 'nav',
+                                'container_class' => 'primary-menu',
+                                'menu_class'      => 'main-menu text-right'
+
+                            )
+                        ); ?>
+
                     </div>
                 </div>
             </div>

@@ -27,275 +27,56 @@ get_header();
             <!-- Search Form End -->
 
 
-            <section class="find-tours bg-color-yellow p-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2  class="color-balck-h">FIND YOUR NEXT TOUR</h2>
-                            <form action="#" method="post">
-                                <div class="form-container">
-                                    <div class="box-select">
-                                        <div class="select">
-                                            <select name="">
-                                                <option>Destination</option>
-                                                <option>Finance</option>
-                                                <option>Accountant</option>
-                                                <option>Enginner</option>
-                                                <option>Programmer</option>
-                                                <option>Developer</option>
-                                            </select>
-                                        </div>
-                                        <div class="select">
-                                            <select name="">
-                                                <option>Duration</option>
-                                                <option>Dhaka</option>
-                                                <option>Shylet</option>
-                                                <option>Khulna</option>
-                                                <option>Barishal</option>
-                                                <option>Chittagong</option>
-                                            </select>
-                                        </div>
-                                        <div class="select">
-                                            <select name="">
-                                                <option>Style</option>
-                                                <option>Web Design</option>
-                                                <option>Designing</option>
-                                                <option>Development</option>
-                                                <option>Programming</option>
-                                                <option>Developing</option>
-                                            </select>
-                                        </div>
-                                        <div class="select">
-                                            <button type="button">find tours</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+          <?php include(TEMPLATEPATH . '/template-parts/shared/find-tour.php') ?>
 
             <!-- Most popular tours Start -->
             <section class="popular-places p-5 pl-0 pr-0">
                 <div class="container">
-                    <h2 class="text-center header-text-1">LET US TAKE YOU TO YOUR NEXT ADVENTURE</h2>
-                    <h3 class="text-center header-text-2">Most popular tours</h3>
+                    <h2 class="text-center header-text-1"><?php if(get_field('m_heading')) the_field('m_heading'); ?></h2>
+                    <h3 class="text-center header-text-2"><?php if(get_field('m_sub_heading')) the_field('m_sub_heading'); ?></h3>
 
                     <!-- tours places -->
                     <div class="next-tour mt-50">
                         <div class="row">
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
 
-                        <!-- row ended -->
-                        <div class="row">
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                            <?php
 
-                        <!-- row ended -->
-                        <!-- row ended -->
-                        <div class="row">
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                            $args = array(
+                                'post_type' => 'tour',
+                                'post_status' => 'publish',
+                                'posts_per_page'=>12,
+                                'order'=>'DESC',
+                                'orderby'=>'ID',
+                            );
 
-                        <!-- row ended -->
-                        <!-- row ended -->
-                        <div class="row">
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
-                                <a href="">
-                                    <div class="place-card">
-                                        <div class="img-text-holder">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/places/place.jpg" alt="Tour Picture">
-                                            <div class="img-text">
-                                                <p>Argentina Highlights</p>
-                                            </div>
-                                        </div>
-                                        <ul class="place-detail">
-                                            <li><p class="time">12 Days</p></li>
-                                            <li><p class="price">Starting From $3,790 per person</p></li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                            ?>
+                            <?php $loop = new WP_Query($args); ?>
 
-                        <!-- row ended -->
+                            <?php if($loop->have_posts()){?>
+
+                                <?php while($loop->have_posts()) : $loop->the_post(); ?>
+                                    <div class="col-md-4 col-lg-4 col-sm-4 pb-30">
+                                        <a href="<?php echo get_permalink(); ?>">
+                                            <div class="place-card">
+                                                <div class="img-text-holder">
+                                                    <img src="<?php $image = get_field('thumbnail _image'); echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                                                    <div class="img-text">
+                                                        <p><?php the_field('title'); ?></p>
+                                                    </div>
+                                                </div>
+                                                <ul class="place-detail">
+                                                    <li><p class="time"><?php the_field('d_duration'); ?> Days</p></li>
+                                                    <li><p class="price">Starting From $<?php the_field('price'); ?> per person</p></li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <?php endwhile; ?>
+                                <?php wp_reset_query(); ?>
+
+
+                            <?php } ?>
+
 
                     </div>
 
@@ -360,39 +141,43 @@ get_header();
 
             <section class="recent-p bg-black p-5 pl-0 pr-0 pb-50">
                 <div class="container">
-                    <h4 class="header-text-1 text-white post-header">RECENT POSTS</h4>
-                    <p class="regular-text-1 mt-38 max-w-350">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    <h4 class="header-text-1 text-white post-header"><?php if(get_field('r_heading')) the_field('r_heading'); ?></h4>
+                    <p class="regular-text-1 mt-38 max-w-350"><?php if(get_field('r_sub_heading')) the_field('r_sub_heading'); ?></p>
                     <div class="row mt-80">
-                        <div class="col-md-4 col-sm-4 col-lg-4 pb-30">
-                            <div class="posts">
-                                <div class="post-img">
-                                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/post.jpg" alt="">
+
+                        <?php
+
+                        $args = array(
+                            'post_type' => 'post',
+                            'post_status' => 'publish',
+                            'posts_per_page'=>3,
+                            'order'=>'DESC',
+                            'orderby'=>'ID',
+                        );
+
+                        ?>
+
+                        <?php $loop = new WP_Query($args); ?>
+
+                        <?php if($loop->have_posts()){?>
+
+                            <?php while($loop->have_posts()) : $loop->the_post(); ?>
+                                <div class="col-md-4 col-sm-4 col-lg-4 pb-30">
+                                    <div class="posts">
+                                        <div class="post-img">
+                                            <a href="<?php echo get_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=""></a>
+                                        </div>
+                                        <h4 class="mt-20"><a class="post-hedline" href="<?php echo get_permalink(); ?>"><?php $title = get_the_title();  echo myTruncate($title,10); ?></a></h4>
+                                        <p><?php $content = get_the_content(); echo myTruncate($content,20); ?></p>
+                                        <a href="<?php echo get_permalink(); ?>" class="read-more-btn">Read More...</a>
+                                    </div>
                                 </div>
-                                <h4 class="mt-20"><a class="post-hedline" href="">The beauty of the Mayan world</a></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="" class="read-more-btn">Read More...</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-lg-4 pb-30">
-                            <div class="posts">
-                                <div class="post-img">
-                                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/post.jpg" alt="">
-                                </div>
-                                <h4 class="mt-20"><a class="post-hedline" href="">The beauty of the Mayan world</a></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="" class="read-more-btn">Read More...</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-lg-4 pb-30">
-                             <div class="posts">
-                                <div class="post-img">
-                                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/post.jpg" alt="">
-                                </div>
-                                <h4 class="mt-20"><a class="post-hedline" href="">The beauty of the Mayan world</a></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="" class="read-more-btn">Read More...</a>
-                            </div>
-                        </div>
+                            <?php endwhile; ?>
+                            <?php wp_reset_query(); ?>
+
+
+                        <?php } ?>
+
 
                     </div>
                 </div>

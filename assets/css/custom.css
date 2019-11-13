@@ -1275,6 +1275,17 @@ div[data-simplersidebar="mask"]{
 .destination-tour .place-card img {
     height: auto!important;
 }
+.result-text{
+    font-size: 24px;
+    color: #707070;
+}
+.result-text span{
+    font-family: 'Roboto-b';
+    text-transform: capitalize;
+}
+.wpcf7-response-output{
+    color: red!important;
+}
 
 @media(max-width: 767px){
     .find-tours h2 {
