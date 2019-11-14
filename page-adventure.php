@@ -30,11 +30,18 @@ get_header();
                 <div class="row">
 
                     <?php
+
+                    $array = array('relation' => 'AND');
+                    array_push($array,array(
+                        'key' => 'style',
+                        'value' => 'adventure',
+                        'compare' => 'LIKE'
+                    ));
+
                         $args = array(
                             'numberposts'	=> -1,
                             'post_type'		=> 'tour',
-                            'meta_key'		=> 'style',
-                            'meta_value'	=> 'adventure'
+                            'meta_query'	=> $array
                         );
                     ?>
 

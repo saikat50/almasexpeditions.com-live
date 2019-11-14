@@ -30,15 +30,23 @@ get_header();
                 <div class="row">
 
                     <?php
-                        $args = array(
-                            'numberposts'	=> -1,
-                            'post_type'		=> 'tour',
-                            'meta_key'		=> 'style',
-                            'meta_value'	=> 'family'
-                        );
+
+                    $array = array('relation' => 'AND');
+                    array_push($array,array(
+                        'key' => 'style',
+                        'value' => 'family',
+                        'compare' => 'LIKE'
+                    ));
+
+                    $args = array(
+                        'numberposts'	=> -1,
+                        'post_type'		=> 'tour',
+                        'meta_query'	=> $array
+                    );
                     ?>
 
-                   <?php $loop = new WP_Query($args); ?>
+
+                    <?php $loop = new WP_Query($args); ?>
 
                     <?php while($loop->have_posts()) : $loop->the_post(); ?>
                         <div class="col-md-4 col-lg-4 col-sm-4 pb-30">

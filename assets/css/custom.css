@@ -1310,7 +1310,11 @@ div[data-simplersidebar="mask"]{
 .slider-photo{
     padding-bottom: 30px!important;
 }
-
+.img-text p{
+    width: 90%!important;
+    font-size: 22px!important;
+    line-height: normal;
+}
 
 @media(max-width: 767px){
     .find-tours h2 {

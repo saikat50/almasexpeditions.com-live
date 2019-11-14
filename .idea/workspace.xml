@@ -3,16 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="73fb01c5-cd61-4f13-b193-45956175079c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/blog.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/video/video.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page-search-results.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-search-results.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-tour.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-tour.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/content-single-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/content-single-template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/shared/find-tour.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/shared/find-tour.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-Book-of-Mormon-Tours.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-Book-of-Mormon-Tours.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-adventure.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-adventure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-belize.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-belize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-cultural.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-cultural.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-family-fun.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-family-fun.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-guatemala.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-guatemala.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-holiday-and-seasonal.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-holiday-and-seasonal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-mexico.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-mexico.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,7 @@
       <workItem from="1573456624018" duration="19808000" />
       <workItem from="1573528841429" duration="19658000" />
       <workItem from="1573584925087" duration="39042000" />
-      <workItem from="1573710988709" duration="11915000" />
+      <workItem from="1573710988709" duration="17687000" />
     </task>
     <servers />
   </component>

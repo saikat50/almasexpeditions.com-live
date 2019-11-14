@@ -30,12 +30,21 @@ get_header();
                 <div class="row">
 
                     <?php
+
+                    $array = array('relation' => 'AND');
+                    array_push($array, array(
+                        'key' => 'destination',
+                        'value' => 'mexico',
+                        'compare' => 'LIKE'
+                    ));
+
                     $args = array(
-                        'numberposts'	=> -1,
-                        'post_type'		=> 'tour',
-                        'meta_key'		=> 'destination',
-                        'meta_value'	=> 'mexico'
+                        'numberposts' => -1,
+                        'post_type' => 'tour',
+                        'meta_query' => $array
                     );
+
+
                     ?>
 
                     <?php $loop = new WP_Query($args); ?>
