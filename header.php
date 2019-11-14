@@ -128,20 +128,20 @@
                                 <div class="mobile-menu">
                                     <nav id="dropdown">
                                         <ul>
-                                            <li><a href="index.html">All trips</a></li>
+                                            <li><a href="<?php echo site_url() . '/all-trips'; ?>">All trips</a></li>
                                             <li><a href="">Travel styles</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="">Family fun</a></li>
-                                                    <li><a href="">Adventure</a></li>
-                                                    <li><a href="">Cultural</a></li>
-                                                    <li><a href="">Holiday & Seasonal</a></li>
-                                                    <li><a href="">Book of Mormon Tours</a></li>
+                                                    <li><a href="<?php echo site_url() . '/family-fun'; ?>">Family fun</a></li>
+                                                    <li><a href="<?php echo site_url() . '/adventure'; ?>">Adventure</a></li>
+                                                    <li><a href="<?php echo site_url() . '/cultural'; ?>">Cultural</a></li>
+                                                    <li><a href="<?php echo site_url() . '/holiday-and-seasonal'; ?>">Holiday & Seasonal</a></li>
+                                                    <li><a href="<?php echo site_url() . '/book-of-mormon-tours'; ?>">Book of Mormon Tours</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="">Destinations</a></li>
-                                            <li><a href="">About US</a></li>
-                                            <li><a href="">Blog</a></li>
-                                            <li><a href="">Contact us</a></li>
+                                            <li><a href="<?php echo site_url() . '/destinations'; ?>">Destinations</a></li>
+                                            <li><a href="<?php echo site_url() . '/about-us'; ?>">About US</a></li>
+                                            <li><a href="<?php echo site_url() . '/blog'; ?>">Blog</a></li>
+                                            <li><a href="<?php echo site_url() . '/contact-us'; ?>">Contact us</a></li>
                                         </ul>
                                     </nav>
                                 </div>

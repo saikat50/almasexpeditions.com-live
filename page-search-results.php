@@ -6,19 +6,57 @@ Template Name: Tour Search Page
 $destination = '';
 $duration = '';
 $style = '';
+$message = 'Search Results For';
+
+$array = array('relation' => 'AND');
 
 if(!empty($_GET['destination'])){
     $destination = $_GET['destination'];
+    array_push($array,array(
+        'key' => 'destination',
+        'value' => $destination,
+        'compare' => 'LIKE'
+    ));
+
+    $message = $message . " Destination : <span>".$destination.",</span>";
 }
 
 if(!empty($_GET['duration'])){
     $duration = $_GET['duration'];
+    array_push($array, array(
+        'key' => 'd_duration',
+        'value' => $duration,
+        'compare' => '='
+    ));
+
+    $message = $message . " Duration : <span>".$duration." Days,</span>";
 }
 
 if(!empty($_GET['style'])){
     $style = $_GET['style'];
+    array_push($array, array(
+        'key' => 'style',
+        'value' => $style,
+        'compare' => 'LIKE'
+    ));
+
+    if($style == "family"){
+        $style = "Family fun";
+    }else if($style == "holiday"){
+        $style = "Holiday & Seasonal";
+    }else if($style == "book"){
+        $style = "Book of Mormon Tours";
+    }
+
+    $message = $message . " Style : <span>".$style."</span>";
 }
 
+
+$args = array(
+    'numberposts' => -1,
+    'post_type' => 'tour',
+    'meta_query' => $array
+);
 
 
 
@@ -42,39 +80,13 @@ get_header();
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="about-us-head color-head-balck result-text">
-                        Search Results for Destination: <span><?php echo $destination; ?></span> , Duration: <span><?php echo $duration .' '.'Days'; ?></span> and
-                         Style: <span><?php echo $style; ?></span>
+                      <?php echo $message; ?>
                     </h3>
                 </div>
             </div>
 
             <div class="next-tour mt-50">
                 <div class="row">
-
-                    <?php
-                    $args = array(
-                        'numberposts'	=> -1,
-                        'post_type'		=> 'tour',
-                        'meta_query'	=> array(
-                            'relation'		=> 'AND',
-                            array(
-                                'key'		=> 'destination',
-                                'value'		=> $destination,
-                                'compare'	=> '='
-                            ),
-                            array(
-                                'key'		=> 'd_duration',
-                                'value'		=> $duration,
-                                'compare'	=> '='
-                            ),
-                            array(
-                                'key'		=> 'style',
-                                'value'		=> $style,
-                                'compare'	=> '='
-                            )
-                        )
-                    );
-                    ?>
 
                     <?php $loop = new WP_Query($args); ?>
 

@@ -401,9 +401,10 @@ article header {
 .share-icon{
     position: relative;
     overflow-x: hidden;
-    height: 80px;
+    height: 47px;
     margin-top: -15px;
     width: auto;
+    overflow-y: hidden;
 }
 .share-icon p{
     margin: 0;
@@ -444,4 +445,24 @@ article header {
     text-align: center;
     line-height: 30px;
     margin-right: 5px;
+}
+.entry-header img{
+    height: 540px;
+    width: 100%;
+}
+
+@media(max-width: 767px) {
+    .bottom-bar li:last-child{
+        width: 10%;
+        padding-top: 0;
+    }
+    .bottom-bar li:last-child:hover{
+        width: 100%;
+        margin-top: -38px;
+    }
+    .entry-header img {
+        height: 220px;
+        width: 100%;
+    }
+
 }

@@ -805,6 +805,7 @@ div[data-simplersidebar="mask"]{
     font-family: 'Roboto-r';
     font-size: 20px;
     line-height: 26px;
+    color: #898989;
 }
 
 .tour-overview-topic{
@@ -822,7 +823,7 @@ div[data-simplersidebar="mask"]{
 .tour-overview-topic .tour-topic .topic-head{
     font-family: 'Roboto-b';
     font-size: 25px;
-    color: #707070;
+    color: #383838;
     display: block;
     margin-bottom: 10px;
     max-width: 350px;
@@ -830,9 +831,10 @@ div[data-simplersidebar="mask"]{
 .tour-overview-topic .tour-topic .sub-topic-head{
     font-family: 'Roboto-r';
     font-size: 20px;
-    color: #707070;
+    color: #898989;
     display: block;
     max-width: 300px;
+    line-height: 28px;
 }
 .tour-topic{
     margin: 0;
@@ -863,11 +865,12 @@ div[data-simplersidebar="mask"]{
     padding: 0;
 }
 .features-details .bold-text{
-    font-family: 'Roboto-b';
+    font-family: 'Roboto-m';
     font-size: 20px;
-    color: #707070;
+    color: #898989;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    line-height: 28px;
 }
 .features-details .features-details-li{
     float: left;
@@ -876,11 +879,13 @@ div[data-simplersidebar="mask"]{
 .features-details .features-details-li > i{
     color: #FED61F;
     font-size: 20px;
+    line-height: 28px;
 }
 .features-details .normal-text{
     font-family: 'Roboto-r';
     font-size: 18px;
-    color: #707070;
+    color: #898989;
+    line-height: 28px;
 }
 .features-details .features-details-li{
     width: 91%;
@@ -1118,7 +1123,6 @@ div[data-simplersidebar="mask"]{
 .destination-contact-h {
     font-family: 'Roboto-b';
     font-size: 25px;
-    line-height: 26px;
 }
 #sidebar-4 h5{
     font-family: 'Roboto-r';
@@ -1270,6 +1274,7 @@ div[data-simplersidebar="mask"]{
     }
 .slick-dotted.slick-slider{
     margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .destination-tour .place-card img {
@@ -1286,6 +1291,26 @@ div[data-simplersidebar="mask"]{
 .wpcf7-response-output{
     color: red!important;
 }
+#jssor_1{
+    overflow: visible!important;
+}
+.jssorb031 .i .b {
+    fill: #000;
+    fill-opacity: 0.5;
+    stroke: #fff;
+    stroke-width: 1200;
+    stroke-miterlimit: 10;
+    stroke-opacity: 0.3;
+}
+.jssorb031 .iav .b {
+    fill: #fff;
+    stroke: #000;
+    fill-opacity: 1;
+}
+.slider-photo{
+    padding-bottom: 30px!important;
+}
+
 
 @media(max-width: 767px){
     .find-tours h2 {
@@ -1480,7 +1505,6 @@ div[data-simplersidebar="mask"]{
     }
     .features-details .normal-text {
         font-size: 16px;
-        line-height: 20px;
     }
     .features-details .features-details-li > i {
          color: #FED61F;
@@ -1547,7 +1571,7 @@ div[data-simplersidebar="mask"]{
         margin-top: 20px!important;
     }
     .tour-details .tour-menu li {
-        padding: 10px 9px;
+        padding: 10px 0px;
 
     }
     #main-sidebar-wrapper{
@@ -1646,6 +1670,13 @@ div[data-simplersidebar="mask"]{
         transform: translate(-13%,-50%);
         width: 100%;
     }
+    .tour-details .tour-menu li a {
+        padding: 10px 10px;
+    }
+    .result-text{
+         font-size: 16px;
+     }
+
 
 }
 

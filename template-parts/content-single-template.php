@@ -24,7 +24,7 @@ get_header();
         </div>
     </div>
     <div id="primary" class="content-area">
-        <main id="main" class="site-main">
+        <main id="main" class="site-main pb-50">
 
             <div class="container">
                 <div class="row">

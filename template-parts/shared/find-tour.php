@@ -32,7 +32,7 @@
                             <div class="select">
                                 <select name="style">
                                     <option disabled selected>Style</option>
-                                    <option value="family ">Family fun</option>
+                                    <option value="family">Family fun</option>
                                     <option value="adventure">Adventure</option>
                                     <option value="cultural">Cultural</option>
                                     <option value="holiday">Holiday & Seasonal</option>
