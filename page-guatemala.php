@@ -37,9 +37,12 @@ get_header();
                         'value' => 'guatemala',
                         'compare' => 'LIKE'
                     ));
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
                     $args = array(
-                        'numberposts'	=> -1,
                         'post_type'		=> 'tour',
+                        'posts_per_page' => 20,
+                        'paged' => $paged,
                         'meta_query'	=> $array
                     );
 

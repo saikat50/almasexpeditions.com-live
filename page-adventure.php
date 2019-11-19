@@ -38,9 +38,12 @@ get_header();
                         'compare' => 'LIKE'
                     ));
 
-                        $args = array(
-                            'numberposts'	=> -1,
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+                    $args = array(
                             'post_type'		=> 'tour',
+                            'posts_per_page' => 20,
+                             'paged' => $paged,
                             'meta_query'	=> $array
                         );
                     ?>

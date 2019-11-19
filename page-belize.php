@@ -39,12 +39,14 @@ get_header();
                         'compare' => 'LIKE'
                     ));
 
-                    $args = array(
-                        'numberposts' => -1,
-                        'post_type' => 'tour',
-                        'meta_query' => $array
-                    );
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
+                    $args = array(
+                        'post_type'		=> 'tour',
+                        'posts_per_page' => 20,
+                        'paged' => $paged,
+                        'meta_query'	=> $array
+                    );
                     ?>
 
                     <?php $loop = new WP_Query($args); ?>

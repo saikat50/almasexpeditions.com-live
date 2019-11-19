@@ -36,7 +36,7 @@ get_header();
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     $args = array(
                         'post_type'		=> 'tour',
-                        'posts_per_page' => 10,
+                        'posts_per_page' => 20,
                         'paged' => $paged
                     );
                     ?>
@@ -63,25 +63,25 @@ get_header();
 
                     <?php endwhile; ?>
 
-                    <?php
-
-                    $total_pages = 10;
-
-                    if ($total_pages > 1){
-
-                        $current_page = max(1, get_query_var('paged'));
-
-                        echo paginate_links(array(
-                            'base' => get_pagenum_link(1) . '%_%',
-                            'format' => '/page/%#%',
-                            'current' => $current_page,
-                            'total' => $total_pages,
-                            'prev_text'    => __('« prev'),
-                            'next_text'    => __('next »'),
-                        ));
-                    }
-
-                    ?>
+<!--                    --><?php
+//
+//                    $total_pages = 10;
+//
+//                    if ($total_pages > 1){
+//
+//                        $current_page = max(1, get_query_var('paged'));
+//
+//                        echo paginate_links(array(
+//                            'base' => get_pagenum_link(1) . '%_%',
+//                            'format' => '/page/%#%',
+//                            'current' => $current_page,
+//                            'total' => $total_pages,
+//                            'prev_text'    => __('« prev'),
+//                            'next_text'    => __('next »'),
+//                        ));
+//                    }
+//
+//                    ?>
 
                     <?php wp_reset_query(); ?>
 
