@@ -36,7 +36,7 @@ get_header();
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     $args = array(
                         'post_type'		=> 'tour',
-                        'posts_per_page' => 12,
+                        'posts_per_page' => 10,
                         'paged' => $paged
                     );
                     ?>
@@ -65,7 +65,7 @@ get_header();
 
                     <?php
 
-                    $total_pages = $loop->max_num_pages;
+                    $total_pages = 10;
 
                     if ($total_pages > 1){
 
