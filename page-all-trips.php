@@ -33,9 +33,11 @@ get_header();
 
 
                     <?php
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     $args = array(
-                        'numberposts'	=> -1,
-                        'post_type'		=> 'tour'
+                        'post_type'		=> 'tour',
+                        'posts_per_page' => 10,
+                        'paged' => $paged
                     );
                     ?>
 
